@@ -78,7 +78,7 @@ var makeButtonInvisible = function makeButtonInvisible(buttonSelector) {
 };
 
 var screenBreakpoints = [1600, 1200, 900, 600];
-var appearBreakpoints = [425, 375, 300, 200];
+var appearBreakpoints = [425, 375, 300, 250];
 
 if (jQuery('bookTheTableOnNav').hasClass() !== 'bookTheTableOnNav_alwaysVisible') {
   jQuery(window).scroll(function () {

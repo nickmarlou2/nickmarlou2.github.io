@@ -1171,6 +1171,12 @@ a .underline{
     width:80px;
     height:80px;
   }
+  .about-dish:first-child{
+    margin-top:8vh;
+  }
+  .about-dish:last-child{
+    margin-bottom:8vh;
+  }
 }
 
 

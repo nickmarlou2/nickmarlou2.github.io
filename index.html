@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GINZA</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="general-container" id="body">
+  <!-- Боковое меню навигации -->
+  <aside class="main-nav-container main-nav-container_closed-with-hamburger">
+    <div class="logo-and-nav-wrapper">
+      <div class="main-nav-container-logo">
+        <a href="./index.html">
+          <svg id="show-hamburger" class="main-nav-container__logo" viewBox="0 0 168 75" xmlns="http://www.w3.org/2000/svg">
+            <title>3EE51176-F18B-4F18-9485-D16BBDAD48A2</title>
+            <g fill="none" fill-rule="evenodd">
+              <path d="M12.18 62.299h8.526v.683c0 1.55-.182 2.921-.547 4.116-.358 1.104-.959 2.138-1.804 3.102-1.916 2.155-4.353 3.233-7.311 3.233-2.888 0-5.36-1.043-7.419-3.128C1.567 68.211.537 65.7.537 62.768c0-2.995 1.048-5.535 3.142-7.62 2.094-2.093 4.641-3.14 7.645-3.14 1.613 0 3.117.33 4.517.99 1.337.659 2.652 1.728 3.945 3.206l-2.222 2.126c-1.69-2.255-3.754-3.38-6.188-3.38-2.181 0-4.013.752-5.491 2.257-1.48 1.478-2.22 3.333-2.22 5.56 0 2.3.824 4.193 2.474 5.682 1.54 1.38 3.21 2.07 5.012 2.07 1.532 0 2.907-.515 4.128-1.55 1.222-1.042 1.903-2.29 2.047-3.741H12.18v-2.93m31.605 10.748H46.9V52.408h-3.114zm27.234 0v-22.04l15.05 15.744V52.408h3.113v21.894l-15.05-15.705v14.449H71.02m45.838-2.927h9.905v2.927h-15.024l10.13-17.71h-8.474v-2.928h13.594l-10.13 17.71m43.552-5.011l-3.06-7.017-3.206 7.017h6.266zm1.27 2.927h-8.834l-2.299 5.012h-3.356l10.212-21.934 9.851 21.934h-3.407l-2.167-5.012z" fill="#000"/><path d="M77.35 23.593h13.093v-4.928H77.35v4.928zm0-13.218a40.57 40.57 0 0 0 6.546.542c2.34 0 4.511-.211 6.547-.542V15.6H77.35v-5.226zm16.156 8.29h2.097V15.6h-2.097V9.76c9.24-2.26 14.561-7.083 14.848-7.348L106.269.164c-.061.058-4.69 4.262-12.763 6.427V.146h-3.063v7.118a37 37 0 0 1-6.547.59 36.87 36.87 0 0 1-6.545-.593V.146h-3.064v6.438C66.24 4.414 61.583.22 61.522.163L59.44 2.41c.285.265 5.608 5.087 14.847 7.348V15.6H72.19v3.064h2.098v4.928h-6.203v3.063h6.203v5.116h3.064v-5.116h13.092v5.116h3.063v-5.116h6.204v-3.063h-6.204v-4.928z" fill="#FF4040"/>
+            </g>
+        </a>
+      </div>
+      <nav class="main-nav-container__nav hidden" role="navigation" aria-label="Навигация по сайту">
+        <a id="history-link" href="#history">О проекте</a>
+        <a href="./menu.html">Меню</a>
+        <a href="./news.html">Новости</a>
+        <a href="./club.html">Гинза Клуб</a>
+        <a href="./contacts.html">Контакты</a>
+      </nav>
+      <button type="button" class="bookTheTableOnNav_invisible hidden" id="bookTheTableOnNav">
+        ЗАБРОНИРОВАТЬ СТОЛ
+        <div class="underline"></div>
+      </button>
+      <button type="button" id="toggleMobileNav">
+        <div id="toggleMobileNav__line" class="hidden"></div>
+        <div id="toggleMobileNav__hamburger">
+          <svg width="44" height="18" viewBox="0 0 44 18" xmlns="http://www.w3.org/2000/svg"><title>DC2DF7FF-2C7C-4C46-9E9B-7E75934DDF17</title><path d="M1 1h41.012M1 9h41.012M1 17h41.012" stroke="#D4D4D4" stroke-width="2" fill="none" stroke-linecap="square"/></svg>
+        </div>
+      </button>
+    </div>
+  </aside>
+
+    <!-- Обёртка основного контента -->
+    <div class="main-content-wrapper main-content-wrapper-fixed-hamburger">
+      <div class="main-content-wrapper__style-line main-content-wrapper__style-line_left"></div>
+      <div class="main-content-wrapper__style-line main-content-wrapper__style-line_right"></div>
+      <div class="main-content-wrapper__style-line main-content-wrapper__style-line_top"></div>
+      <div class="main-content-wrapper__style-line main-content-wrapper__style-line_bottom"></div>
+      <div class="slider-wrapper" id="slider">
+        <button id="bookTheTable"class="bookTheTable">ЗАБРОНИРОВАТЬ СТОЛ</button>
+        <!-- Контейнер для точек слайдера -->
+        <div class="dots-wrapper"></div>
+        <!-- Слайдер -->
+        <div class="slider owl-carousel">
+          <picture class="slide">
+            <source srcset="img/slider-item-1.jpg" media="(max-width: 600px)">
+            <img src="img/slider-item-1.jpg" alt="Японский ресторан">
+          </picture>
+          <picture class="slide">
+            <source srcset="img/slider-item-2.jpg" media="(max-width: 600px)">
+            <img src="img/slider-item-2.jpg" alt="Японский ресторан">
+          </picture>
+          <picture class="slide">
+            <source srcset="img/slider-item-3.jpg" media="(max-width: 600px)">
+            <img src="img/slider-item-3.jpg" alt="Японский ресторан">
+          </picture>
+          <picture class="slide">
+            <source srcset="img/slider-item-4.jpg" media="(max-width: 600px)">
+            <img src="img/slider-item-4.jpg" alt="Японский ресторан">
+          </picture>
+          <picture class="slide">
+            <source srcset="img/slider-item-5.jpg" media="(max-width: 600px)">
+            <img src="img/slider-item-5.jpg" alt="Японский ресторан">
+          </picture>
+        </div>
+      </div>
+      <!-- Информация об истории компании -->
+      <article class="article-wrapper" id="history">
+        <div class="h-wrapper">
+          <div class="h-wrapper__style-rectangle"></div>
+          <h3>Немного истории</h3>
+        </div>
+        <p>
+          Ginza — ресторан, созданный людьми, которые всем сердцем любят Японию. Здесь подают лучшие блюда классической японской кухни, царит аутентичная атмосфера и высокий уровень сервиса.
+        </p>
+        <p>
+          За вкус блюд отвечает шеф-повар из Японии, который открывает для гостей новые гастрономические сочетания. Интерьер выполнен в сдержанном азиатском стиле, который точно передает обстановку в ресторанах Страны восходящего солнца.
+        </p>
+        <p>
+          Для гостей доступен небольшой уютный зал с большими столиками, места за баром, где можно увидеть процесс работы поваров благодаря открытой кухне, и отдельные кабинки — идеальное место для уединенного ужина.
+        </p>
+      </article>
+      <!-- Стилизованный футер -->
+      <div class="main-content-wrapper__footer">
+        <div class="main-content-wrapper__pattern">
+        </div>
+      </div>
+    </div>
+    <!-- Подключаем скрипты -->
+    <script type="text/javascript" src="js/fontfaceobserver.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/owl-config.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

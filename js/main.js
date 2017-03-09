@@ -117,7 +117,6 @@ var contentToFitHamburger = function contentToFitHamburger() {
   jQuery('.main-content-wrapper').toggleClass('main-content-wrapper-fixed-hamburger');
   jQuery('.content-wrapper').toggleClass('content-wrapper-fixed-hamburger');
 };
-
 // Функция сворачиваем или разворачиваем меню до лого и адаптирует блок контента
 var toogleNoHamburgerMenu = function toogleNoHamburgerMenu() {
   var seletorsToToggle = ['#toggleMobileNav', '.main-nav-container', '.main-content-wrapper', '.main-nav-container', '.main-content-wrapper', '.main-nav-container__logo', '.logo-and-nav-wrapper', '.content-wrapper', '.content-wrapper', '.menu-nav-mobile-wrapper'];
@@ -142,7 +141,7 @@ var toogleNoHamburgerMenu = function toogleNoHamburgerMenu() {
 };
 
 jQuery(document).ready(function () {
-  if (jQuery(window).width() <= 1600) {
+  if (jQuery(this).width() < 600) {
 
     // Поведение при клике на гамбургер или полоску
 

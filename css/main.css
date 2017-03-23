@@ -3556,7 +3556,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object{
   border-radius:2px;
   border-color:#eee;
   border-style:solid;
-  overflow:auto;
+  overflow-y:auto;
+  overflow-x:hidden;
 }
 
 .modal-closed{
@@ -4008,17 +4009,23 @@ input[type="checkbox"]:checked + label> .customCheckbox> span{
 }
 
 @media (max-width: 600px){
-  .modal{
-    height:100%;
-  }
   .closeModal{
     transform:scale(1.5);
     position:absolute;
     top:2.575rem;
     right:21px;
   }
+  #orderCleaning,#giveFeedback{
+    height:400px;
+  }
   #onetime{
-    overflow:auto;
+    height:100%;
+  }
+  #afterConstr,#subscription{
+    height:600px;
+  }
+  #pestControl{
+    height:700px;
   }
   #onetime> form{
     -ms-flex-wrap:wrap;

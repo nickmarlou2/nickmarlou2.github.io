@@ -1223,6 +1223,13 @@ template,[hidden]{
 
 }
 
+@media (max-width: 600px){
+  .garbage-chute{
+    background-image:url();
+    background-color:#fff;
+  }
+}
+
 .about-garbage-chute,
 .about-garbage-chute-video,
 .about-garbage-reviews,
@@ -1317,6 +1324,35 @@ template,[hidden]{
   margin:0;
 }
 
+@media (min-width: 601px) and (max-width: 900px){
+  .about-garbage-chute-features{
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+  }
+  .about-garbage-chute-feature{
+    -ms-flex-preferred-size:45%;
+        flex-basis:45%;
+    width:45%;
+    margin-top:0.6rem;
+    margin-bottom:0.6rem;
+  }
+}
+
+@media (max-width: 600px){
+  .about-garbage-chute-features{
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:column;
+        flex-direction:column;
+  }
+  .about-garbage-chute-feature{
+    margin:0.6rem 0;
+    -ms-flex-preferred-size:100%;
+        flex-basis:100%;
+    width:100%;
+  }
+}
+
 .about-garbage-chute-toOrder{
   display:-ms-flexbox;
   display:flex;
@@ -1358,6 +1394,27 @@ template,[hidden]{
   padding: 0.7rem 1.5rem 0.65rem;
 }
 
+@media (max-width: 600px){
+  .about-garbage-chute-toOrder{
+    -ms-flex-direction:column;
+        flex-direction:column;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    padding:0;
+  }
+  .about-garbage-chute-toOrder-price{
+    width:100%;
+    -ms-flex-preferred-size:100%;
+        flex-basis:100%;
+  }
+  .about-garbage-chute-toOrder-price> h4{
+    font-size:22px !important;
+  }
+  .about-garbage-chute-toOrder> button{
+    display:none;
+  }
+}
+
 .about-garbage-chute-toOrder> button:hover{
   background-color:#fafafa;
 }
@@ -1392,12 +1449,28 @@ template,[hidden]{
       align-content:center;
 }
 
+@media (max-width: 600px){
+  .about-garbage-chute-video{
+    -ms-flex-direction:column;
+        flex-direction:column;
+  }
+}
+
 .about-garbage-chute-video-description{
   -ms-flex-preferred-size:50%;
       flex-basis:50%;
   width:50%;
   max-width:650px;
   color: #6d6d6d;
+}
+
+@media (max-width: 600px){
+  .about-garbage-chute-video-description{
+    -ms-flex-preferred-size:100%;
+        flex-basis:100%;
+    width:100%;
+    max-width:100%;
+  }
 }
 
 .about-garbage-chute-video-wrapper{
@@ -1438,6 +1511,22 @@ template,[hidden]{
   height:10vw;
 }
 
+@media (max-width: 600px){
+  .about-garbage-chute-video-wrapper{
+    -ms-flex-preferred-size:100%;
+        flex-basis:100%;
+    width:100%;
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+  .about-garbage-chute-video-1{
+    height:49vw;
+  }
+  .about-garbage-chute-video-2{
+    height:23vw;
+  }
+}
+
 .about-garbage-reviews{
   display:-ms-flexbox;
   display:flex;
@@ -1474,6 +1563,13 @@ template,[hidden]{
   margin-bottom:4rem;
 }
 
+@media (max-width: 600px){
+  .about-garbage-reviews> h3{
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+}
+
 .review-blocks{
   display:-ms-flexbox;
   display:flex;
@@ -1498,6 +1594,24 @@ template,[hidden]{
 
 .review-block:first-child{
   margin-right:7.5%;
+}
+
+@media (max-width: 600px){
+  .review-blocks{
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:column;
+        flex-direction:column;
+  }
+  .review-block{
+    padding:0;
+    -ms-flex-preferred-size:100%;
+        flex-basis:100%;
+    width:100%;
+  }
+  .review-block:first-child{
+    margin-right:0;
+  }
 }
 
 .review-block> p{
@@ -1538,6 +1652,48 @@ template,[hidden]{
   color:#c5c5c5;
 }
 
+.underline-reviews{
+  display:none;
+}
+
+@media (max-width: 600px){
+  .review-block{
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+  .review-block-author{
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:column;
+        flex-direction:column;
+    -ms-flex-pack:start;
+        justify-content:flex-start;
+    -ms-flex-align:start;
+        align-items:flex-start;
+    -ms-flex-line-pack:start;
+        align-content:flex-start;
+    margin-top:1rem;
+  }
+  .review-block-author> p{
+    display:block;
+    float:left;
+  }
+  .review-block-author> span{
+    display:none;
+  }
+  .underline-reviews{
+    display:block;
+    background-color:#e6e6e6;
+    margin-top:0.5rem !important;
+    margin-bottom:0.5rem;
+  }
+  #openGiveFeedback{
+    margin-top:2rem;
+    margin-bottom:3rem;
+    font-size:1rem;
+  }
+}
+
 .about-garbage-chute-order{
   -ms-flex-direction:row;
       flex-direction:row;
@@ -1566,6 +1722,49 @@ template,[hidden]{
   -ms-flex-preferred-size:48%;
       flex-basis:48%;
   width:48%;
+}
+
+.about-garbage-chute-order-makeOrder{
+  -ms-flex-order:1;
+      order:1;
+}
+
+.about-garbage-chute-order-information{
+  -ms-flex-order:2;
+      order:2;
+}
+
+@media (max-width: 600px){
+  .about-garbage-chute-order{
+    -ms-flex-direction:column;
+        flex-direction:column;
+  }
+  .about-garbage-chute-order-makeOrder{
+    -ms-flex-order:2;
+        order:2;
+    -ms-flex-preferred-size:100%;
+        flex-basis:100%;
+    width:100%;
+    margin-top:1rem;
+    margin-bottom:2rem;
+  }
+  .about-garbage-chute-order-makeOrder input{
+    width:100%;
+  }
+  .about-garbage-chute-order-information{
+    -ms-flex-order:1;
+        order:1;
+    -ms-flex-preferred-size:100%;
+        flex-basis:100%;
+    width:100%;
+  }
+  .about-garbage-chute-order-information-adresses{
+    padding:0 !important;
+  }
+  #garbageChuteMakeOrder{
+    max-width:100%;
+    width:100%;
+  }
 }
 
 .about-garbage-chute-order-makeOrder> h3{
@@ -1601,6 +1800,7 @@ template,[hidden]{
   border-radius:3px;
   color:#c5c5c5;
   padding:0.5rem;
+  border-color: #6d6d6d;
 }
 
 #garbageChute-adress{
@@ -1624,6 +1824,14 @@ template,[hidden]{
   outline: none;
   cursor: pointer;
   padding: 0.7rem 1.5rem 0.65rem;
+}
+
+@media (max-width: 600px){
+  #garbageChute-makeOrder{
+    background-color: #b5c832;
+    color:#fff;
+    width:100%;
+  }
 }
 
 .about-garbage-chute-order-price{
@@ -1723,6 +1931,52 @@ template,[hidden]{
 .about-garbage-chute-order-soc-buttons a:hover #fbShare,
 .about-garbage-chute-order-soc-buttons a:hover #vkShare{
   fill:#c5c5c5;
+}
+
+#garbageChuteGoToOrder-mobile{
+  display:none;
+}
+
+#garbageChuteGoToOrder{
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px;
+  border-color: #b5c832;
+  color: #b5c832;
+  border-style: solid;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  outline: none;
+  cursor: pointer;
+  padding: 0.7rem 1.5rem 0.65rem;
+}
+
+@media (max-width: 600px){
+  .about-garbage-chute-order-information-appeal,.about-garbage-chute-order-soc-buttons,.about-garbage-chute-order-price{
+    display:none;
+  }
+  #garbageChuteGoToOrder-mobile{
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px;
+    border-color: #b5c832;
+    color: #b5c832;
+    border-style: solid;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    outline: none;
+    cursor: pointer;
+    padding: 0.7rem 1.5rem 0.65rem;
+    background-color: #b5c832;
+    color:#fff;
+    display:block;
+    width:86%;
+    margin-top:2rem;
+    margin-bottom:0rem;
+    text-align:center;
+  }
 }
 
 #contacts-page{
@@ -2185,7 +2439,6 @@ article-link__img{
     margin-left:7%;
     top:35vh;
     position:relative;
-    margin-bottom:35vh;
   }
 }
 
@@ -2372,6 +2625,10 @@ article-link__img{
 
 .vacancies-group-select> h2{
   margin-right:3rem;
+  color: #6d6d6d;
+}
+
+.vacancies> h2{
   color: #6d6d6d;
 }
 
@@ -3757,7 +4014,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object{
 
 #orderCleaning> form button:hover,
 #giveFeedback> form button:hover,
-#afterConstr> form button:hover{
+#afterConstr> form button:hover,
+#onetimeSubmitOrder:hover,
+#pestControlSubmitOrder:hover{
   background-color:rgba(0,0,0,.02);
 }
 
@@ -4016,7 +4275,7 @@ input[type="checkbox"]:checked + label> .customCheckbox> span{
     right:21px;
   }
   #orderCleaning,#giveFeedback{
-    height:400px;
+    height:450px;
   }
   #onetime{
     height:100%;
@@ -4063,6 +4322,7 @@ input[type="checkbox"]:checked + label> .customCheckbox> span{
     margin-top:2rem;
     margin-left:auto;
     margin-right:auto;
+    text-align:center;
   }
   .input-row-half{
     margin-top:0.5rem;
@@ -4090,6 +4350,9 @@ input[type="checkbox"]:checked + label> .customCheckbox> span{
   }
   .facadePrice{
     height:3rem;
+  }
+  #giveFeedback input{
+    width:100%;
   }
 }
 

@@ -7,7 +7,7 @@ function makeSiema(selector, perPage) {
       startIndex: 0,
       draggable: true,
       threshold: 20,
-      loop: true
+      loop: false
   });
   return mySiema;
 }

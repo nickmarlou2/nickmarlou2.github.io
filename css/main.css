@@ -709,9 +709,17 @@ template,[hidden]{
   -ms-flex-wrap:wrap;
       flex-wrap:wrap;
   width:86%;
-  height:60vh;
   margin-left:auto;
   margin-right:auto;
+}
+
+.cleaning,
+.pest-control{
+  height:60vh;
+}
+
+.vacancies{
+  height:65vh;
 }
 
 .cleaning-client-select,  .vacancies-group-select{
@@ -1166,6 +1174,11 @@ template,[hidden]{
   text-decoration:underline;
   text-align:center;
   margin-right:1.5rem;
+  color: #6d6d6d;
+}
+
+.cleaning-order> a:visited{
+  color: #6d6d6d;
 }
 
 .cleaning-order> button{
@@ -1977,6 +1990,9 @@ template,[hidden]{
     margin-bottom:0rem;
     text-align:center;
   }
+  #garbageChuteGoToOrder{
+    display:none;
+  }
 }
 
 #contacts-page{
@@ -2347,7 +2363,7 @@ article-link__img{
         flex-direction:column !important;
   }
   #article{
-    top:2vh;
+    top:35vh;
   }
   #article> article{
     width:100% !important;
@@ -2437,7 +2453,6 @@ article-link__img{
         flex-basis:86%;
     width:86%;
     margin-left:7%;
-    top:35vh;
     position:relative;
   }
 }
@@ -2488,6 +2503,7 @@ article-link__img{
 
 @media (max-width: 600px){
   .slider-wrapper{
+    height:auto;
     margin:0;
   }
   .slider-wrapper,.siema-article{
@@ -2657,6 +2673,11 @@ article-link__img{
   -ms-flex-wrap:nowrap;
       flex-wrap:nowrap;
   overflow:auto;
+}
+
+.vacancies-select> nav{
+  max-height:35vh;
+  height:35vh;
 }
 
 .vacancies-select{
